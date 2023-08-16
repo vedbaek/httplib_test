@@ -1,0 +1,416 @@
+No.     Time           Source                Destination           Protocol Length Info
+     37 9.063868       172.16.174.121        14.119.104.254        TCP      74     62628 → 443 [SYN] Seq=0 Win=64240 Len=0 MSS=1460 SACK_PERM TSval=447822075 TSecr=0 WS=128
+
+Frame 37: 74 bytes on wire (592 bits), 74 bytes captured (592 bits) on interface \Device\NPF_{EE8E3F8B-5495-46B4-9F95-E9AF344B12E7}, id 0
+Ethernet II, Src: IntelCor_99:34:96 (c4:d0:e3:99:34:96), Dst: WiWide_00:00:01 (00:1f:7a:00:00:01)
+Internet Protocol Version 4, Src: 172.16.174.121, Dst: 14.119.104.254
+Transmission Control Protocol, Src Port: 62628, Dst Port: 443, Seq: 0, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     38 9.073129       14.119.104.254        172.16.174.121        TCP      74     443 → 62628 [SYN, ACK] Seq=0 Ack=1 Win=8192 Len=0 MSS=1300 SACK_PERM WS=32
+
+Frame 38: 74 bytes on wire (592 bits), 74 bytes captured (592 bits) on interface \Device\NPF_{EE8E3F8B-5495-46B4-9F95-E9AF344B12E7}, id 0
+Ethernet II, Src: WiWide_00:00:01 (00:1f:7a:00:00:01), Dst: IntelCor_99:34:96 (c4:d0:e3:99:34:96)
+Internet Protocol Version 4, Src: 14.119.104.254, Dst: 172.16.174.121
+Transmission Control Protocol, Src Port: 443, Dst Port: 62628, Seq: 0, Ack: 1, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     39 9.073344       172.16.174.121        14.119.104.254        TCP      54     62628 → 443 [ACK] Seq=1 Ack=1 Win=64256 Len=0
+
+Frame 39: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{EE8E3F8B-5495-46B4-9F95-E9AF344B12E7}, id 0
+Ethernet II, Src: IntelCor_99:34:96 (c4:d0:e3:99:34:96), Dst: WiWide_00:00:01 (00:1f:7a:00:00:01)
+Internet Protocol Version 4, Src: 172.16.174.121, Dst: 14.119.104.254
+Transmission Control Protocol, Src Port: 62628, Dst Port: 443, Seq: 1, Ack: 1, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     40 9.078567       172.16.174.121        14.119.104.254        TLSv1.2  571    Client Hello
+
+Frame 40: 571 bytes on wire (4568 bits), 571 bytes captured (4568 bits) on interface \Device\NPF_{EE8E3F8B-5495-46B4-9F95-E9AF344B12E7}, id 0
+Ethernet II, Src: IntelCor_99:34:96 (c4:d0:e3:99:34:96), Dst: WiWide_00:00:01 (00:1f:7a:00:00:01)
+Internet Protocol Version 4, Src: 172.16.174.121, Dst: 14.119.104.254
+Transmission Control Protocol, Src Port: 62628, Dst Port: 443, Seq: 1, Ack: 1, Len: 517
+Transport Layer Security
+    TLSv1.2 Record Layer: Handshake Protocol: Client Hello
+        Content Type: Handshake (22)
+        Version: TLS 1.0 (0x0301)
+        Length: 512
+        Handshake Protocol: Client Hello
+            Handshake Type: Client Hello (1)
+            Length: 508
+            Version: TLS 1.2 (0x0303)
+            Random: 48e7346b422c9cb4b44bd0f65cde69b6d2b6edee680c10a03eeaed6a191cdfbb
+            Session ID Length: 32
+            Session ID: dddb0a01651a33b80217372c9c91f61ca5828b2fcc1885544e6bf23a4d4e8c86
+            Cipher Suites Length: 62
+            Cipher Suites (31 suites)
+            Compression Methods Length: 1
+            Compression Methods (1 method)
+            Extensions Length: 373
+            Extension: server_name (len=18)
+            Extension: ec_point_formats (len=4)
+            Extension: supported_groups (len=12)
+            Extension: next_protocol_negotiation (len=0)
+            Extension: application_layer_protocol_negotiation (len=14)
+            Extension: encrypt_then_mac (len=0)
+            Extension: extended_master_secret (len=0)
+            Extension: post_handshake_auth (len=0)
+            Extension: signature_algorithms (len=42)
+            Extension: supported_versions (len=5)
+            Extension: psk_key_exchange_modes (len=2)
+            Extension: key_share (len=38)
+            Extension: padding (len=186)
+            [JA3 Fullstring: 771,4866-4867-4865-49196-49200-159-52393-52392-52394-49195-49199-158-49188-49192-107-49187-49191-103-49162-49172-57-49161-49171-51-157-156-61-60-53-47-255,0-11-10-13172-16-22-23-49-13-43-45-51-21,29-23-30-25-24,0-1-2]
+            [JA3: f436b9416f37d134cadd04886327d3e8]
+
+No.     Time           Source                Destination           Protocol Length Info
+     41 9.104986       14.119.104.254        172.16.174.121        TCP      60     443 → 62628 [ACK] Seq=1 Ack=518 Win=30208 Len=0
+
+Frame 41: 60 bytes on wire (480 bits), 60 bytes captured (480 bits) on interface \Device\NPF_{EE8E3F8B-5495-46B4-9F95-E9AF344B12E7}, id 0
+Ethernet II, Src: WiWide_00:00:01 (00:1f:7a:00:00:01), Dst: IntelCor_99:34:96 (c4:d0:e3:99:34:96)
+Internet Protocol Version 4, Src: 14.119.104.254, Dst: 172.16.174.121
+Transmission Control Protocol, Src Port: 443, Dst Port: 62628, Seq: 1, Ack: 518, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     42 9.113924       14.119.104.254        172.16.174.121        TLSv1.2  1334   Server Hello
+
+Frame 42: 1334 bytes on wire (10672 bits), 1334 bytes captured (10672 bits) on interface \Device\NPF_{EE8E3F8B-5495-46B4-9F95-E9AF344B12E7}, id 0
+Ethernet II, Src: WiWide_00:00:01 (00:1f:7a:00:00:01), Dst: IntelCor_99:34:96 (c4:d0:e3:99:34:96)
+Internet Protocol Version 4, Src: 14.119.104.254, Dst: 172.16.174.121
+Transmission Control Protocol, Src Port: 443, Dst Port: 62628, Seq: 1, Ack: 518, Len: 1280
+Transport Layer Security
+    TLSv1.2 Record Layer: Handshake Protocol: Server Hello
+        Content Type: Handshake (22)
+        Version: TLS 1.2 (0x0303)
+        Length: 102
+        Handshake Protocol: Server Hello
+            Handshake Type: Server Hello (2)
+            Length: 98
+            Version: TLS 1.2 (0x0303)
+            Random: 64dcc576a7b6f4ccbb101a58c6552d528bdd9a35b38e839ef9e62582cce1ffe6
+            Session ID Length: 32
+            Session ID: 88a1d4294db34088d86ddd9866e763ca20ad6377954b0f45169601e67ea57726
+            Cipher Suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 (0xc02f)
+            Compression Method: null (0)
+            Extensions Length: 26
+            Extension: renegotiation_info (len=1)
+            Extension: application_layer_protocol_negotiation (len=11)
+            Extension: ec_point_formats (len=2)
+            [JA3S Fullstring: 771,49199,65281-16-11]
+            [JA3S: 2de81c22ea32a57162df5cb08d4a2795]
+
+No.     Time           Source                Destination           Protocol Length Info
+     43 9.113924       14.119.104.254        172.16.174.121        TCP      1334   443 → 62628 [ACK] Seq=1281 Ack=518 Win=30208 Len=1280 [TCP segment of a reassembled PDU]
+
+Frame 43: 1334 bytes on wire (10672 bits), 1334 bytes captured (10672 bits) on interface \Device\NPF_{EE8E3F8B-5495-46B4-9F95-E9AF344B12E7}, id 0
+Ethernet II, Src: WiWide_00:00:01 (00:1f:7a:00:00:01), Dst: IntelCor_99:34:96 (c4:d0:e3:99:34:96)
+Internet Protocol Version 4, Src: 14.119.104.254, Dst: 172.16.174.121
+Transmission Control Protocol, Src Port: 443, Dst Port: 62628, Seq: 1281, Ack: 518, Len: 1280
+
+No.     Time           Source                Destination           Protocol Length Info
+     44 9.113924       14.119.104.254        172.16.174.121        TCP      1334   443 → 62628 [ACK] Seq=2561 Ack=518 Win=30208 Len=1280 [TCP segment of a reassembled PDU]
+
+Frame 44: 1334 bytes on wire (10672 bits), 1334 bytes captured (10672 bits) on interface \Device\NPF_{EE8E3F8B-5495-46B4-9F95-E9AF344B12E7}, id 0
+Ethernet II, Src: WiWide_00:00:01 (00:1f:7a:00:00:01), Dst: IntelCor_99:34:96 (c4:d0:e3:99:34:96)
+Internet Protocol Version 4, Src: 14.119.104.254, Dst: 172.16.174.121
+Transmission Control Protocol, Src Port: 443, Dst Port: 62628, Seq: 2561, Ack: 518, Len: 1280
+
+No.     Time           Source                Destination           Protocol Length Info
+     45 9.113924       14.119.104.254        172.16.174.121        TLSv1.2  1334   Certificate
+
+Frame 45: 1334 bytes on wire (10672 bits), 1334 bytes captured (10672 bits) on interface \Device\NPF_{EE8E3F8B-5495-46B4-9F95-E9AF344B12E7}, id 0
+Ethernet II, Src: WiWide_00:00:01 (00:1f:7a:00:00:01), Dst: IntelCor_99:34:96 (c4:d0:e3:99:34:96)
+Internet Protocol Version 4, Src: 14.119.104.254, Dst: 172.16.174.121
+Transmission Control Protocol, Src Port: 443, Dst Port: 62628, Seq: 3841, Ack: 518, Len: 1280
+[4 Reassembled TCP Segments (4773 bytes): #42(1173), #43(1280), #44(1280), #45(1040)]
+Transport Layer Security
+    TLSv1.2 Record Layer: Handshake Protocol: Certificate
+        Content Type: Handshake (22)
+        Version: TLS 1.2 (0x0303)
+        Length: 4768
+        Handshake Protocol: Certificate
+            Handshake Type: Certificate (11)
+            Length: 4764
+            Certificates Length: 4761
+            Certificates (4761 bytes)
+
+No.     Time           Source                Destination           Protocol Length Info
+     46 9.113924       14.119.104.254        172.16.174.121        TLSv1.2  161    Server Key Exchange, Server Hello Done
+
+Frame 46: 161 bytes on wire (1288 bits), 161 bytes captured (1288 bits) on interface \Device\NPF_{EE8E3F8B-5495-46B4-9F95-E9AF344B12E7}, id 0
+Ethernet II, Src: WiWide_00:00:01 (00:1f:7a:00:00:01), Dst: IntelCor_99:34:96 (c4:d0:e3:99:34:96)
+Internet Protocol Version 4, Src: 14.119.104.254, Dst: 172.16.174.121
+Transmission Control Protocol, Src Port: 443, Dst Port: 62628, Seq: 5121, Ack: 518, Len: 107
+[2 Reassembled TCP Segments (338 bytes): #45(240), #46(98)]
+Transport Layer Security
+    TLSv1.2 Record Layer: Handshake Protocol: Server Key Exchange
+        Content Type: Handshake (22)
+        Version: TLS 1.2 (0x0303)
+        Length: 333
+        Handshake Protocol: Server Key Exchange
+            Handshake Type: Server Key Exchange (12)
+            Length: 329
+            EC Diffie-Hellman Server Params
+Transport Layer Security
+    TLSv1.2 Record Layer: Handshake Protocol: Server Hello Done
+        Content Type: Handshake (22)
+        Version: TLS 1.2 (0x0303)
+        Length: 4
+        Handshake Protocol: Server Hello Done
+            Handshake Type: Server Hello Done (14)
+            Length: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     47 9.114223       172.16.174.121        14.119.104.254        TCP      54     62628 → 443 [ACK] Seq=518 Ack=5121 Win=61312 Len=0
+
+Frame 47: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{EE8E3F8B-5495-46B4-9F95-E9AF344B12E7}, id 0
+Ethernet II, Src: IntelCor_99:34:96 (c4:d0:e3:99:34:96), Dst: WiWide_00:00:01 (00:1f:7a:00:00:01)
+Internet Protocol Version 4, Src: 172.16.174.121, Dst: 14.119.104.254
+Transmission Control Protocol, Src Port: 62628, Dst Port: 443, Seq: 518, Ack: 5121, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     48 9.114255       172.16.174.121        14.119.104.254        TCP      54     62628 → 443 [ACK] Seq=518 Ack=5228 Win=61312 Len=0
+
+Frame 48: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{EE8E3F8B-5495-46B4-9F95-E9AF344B12E7}, id 0
+Ethernet II, Src: IntelCor_99:34:96 (c4:d0:e3:99:34:96), Dst: WiWide_00:00:01 (00:1f:7a:00:00:01)
+Internet Protocol Version 4, Src: 172.16.174.121, Dst: 14.119.104.254
+Transmission Control Protocol, Src Port: 62628, Dst Port: 443, Seq: 518, Ack: 5228, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     49 9.114949       172.16.174.121        14.119.104.254        TLSv1.2  180    Client Key Exchange, Change Cipher Spec, Encrypted Handshake Message
+
+Frame 49: 180 bytes on wire (1440 bits), 180 bytes captured (1440 bits) on interface \Device\NPF_{EE8E3F8B-5495-46B4-9F95-E9AF344B12E7}, id 0
+Ethernet II, Src: IntelCor_99:34:96 (c4:d0:e3:99:34:96), Dst: WiWide_00:00:01 (00:1f:7a:00:00:01)
+Internet Protocol Version 4, Src: 172.16.174.121, Dst: 14.119.104.254
+Transmission Control Protocol, Src Port: 62628, Dst Port: 443, Seq: 518, Ack: 5228, Len: 126
+Transport Layer Security
+    TLSv1.2 Record Layer: Handshake Protocol: Client Key Exchange
+        Content Type: Handshake (22)
+        Version: TLS 1.2 (0x0303)
+        Length: 70
+        Handshake Protocol: Client Key Exchange
+            Handshake Type: Client Key Exchange (16)
+            Length: 66
+            EC Diffie-Hellman Client Params
+    TLSv1.2 Record Layer: Change Cipher Spec Protocol: Change Cipher Spec
+        Content Type: Change Cipher Spec (20)
+        Version: TLS 1.2 (0x0303)
+        Length: 1
+        Change Cipher Spec Message
+    TLSv1.2 Record Layer: Handshake Protocol: Encrypted Handshake Message
+        Content Type: Handshake (22)
+        Version: TLS 1.2 (0x0303)
+        Length: 40
+        Handshake Protocol: Encrypted Handshake Message
+
+No.     Time           Source                Destination           Protocol Length Info
+     50 9.123184       14.119.104.254        172.16.174.121        TCP      161    [TCP Spurious Retransmission] 443 → 62628 [PSH, ACK] Seq=5121 Ack=518 Win=30208 Len=107
+
+Frame 50: 161 bytes on wire (1288 bits), 161 bytes captured (1288 bits) on interface \Device\NPF_{EE8E3F8B-5495-46B4-9F95-E9AF344B12E7}, id 0
+Ethernet II, Src: WiWide_00:00:01 (00:1f:7a:00:00:01), Dst: IntelCor_99:34:96 (c4:d0:e3:99:34:96)
+Internet Protocol Version 4, Src: 14.119.104.254, Dst: 172.16.174.121
+Transmission Control Protocol, Src Port: 443, Dst Port: 62628, Seq: 5121, Ack: 518, Len: 107
+
+No.     Time           Source                Destination           Protocol Length Info
+     51 9.123465       172.16.174.121        14.119.104.254        TCP      66     [TCP Dup ACK 48#1] 62628 → 443 [ACK] Seq=644 Ack=5228 Win=64128 Len=0 SLE=5121 SRE=5228
+
+Frame 51: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface \Device\NPF_{EE8E3F8B-5495-46B4-9F95-E9AF344B12E7}, id 0
+Ethernet II, Src: IntelCor_99:34:96 (c4:d0:e3:99:34:96), Dst: WiWide_00:00:01 (00:1f:7a:00:00:01)
+Internet Protocol Version 4, Src: 172.16.174.121, Dst: 14.119.104.254
+Transmission Control Protocol, Src Port: 62628, Dst Port: 443, Seq: 644, Ack: 5228, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     52 9.130675       14.119.104.254        172.16.174.121        TCP      60     443 → 62628 [ACK] Seq=5228 Ack=644 Win=30208 Len=0
+
+Frame 52: 60 bytes on wire (480 bits), 60 bytes captured (480 bits) on interface \Device\NPF_{EE8E3F8B-5495-46B4-9F95-E9AF344B12E7}, id 0
+Ethernet II, Src: WiWide_00:00:01 (00:1f:7a:00:00:01), Dst: IntelCor_99:34:96 (c4:d0:e3:99:34:96)
+Internet Protocol Version 4, Src: 14.119.104.254, Dst: 172.16.174.121
+Transmission Control Protocol, Src Port: 443, Dst Port: 62628, Seq: 5228, Ack: 644, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     54 9.300061       14.119.104.254        172.16.174.121        TLSv1.2  105    Change Cipher Spec, Encrypted Handshake Message
+
+Frame 54: 105 bytes on wire (840 bits), 105 bytes captured (840 bits) on interface \Device\NPF_{EE8E3F8B-5495-46B4-9F95-E9AF344B12E7}, id 0
+Ethernet II, Src: WiWide_00:00:01 (00:1f:7a:00:00:01), Dst: IntelCor_99:34:96 (c4:d0:e3:99:34:96)
+Internet Protocol Version 4, Src: 14.119.104.254, Dst: 172.16.174.121
+Transmission Control Protocol, Src Port: 443, Dst Port: 62628, Seq: 5228, Ack: 644, Len: 51
+Transport Layer Security
+    TLSv1.2 Record Layer: Change Cipher Spec Protocol: Change Cipher Spec
+        Content Type: Change Cipher Spec (20)
+        Version: TLS 1.2 (0x0303)
+        Length: 1
+        Change Cipher Spec Message
+    TLSv1.2 Record Layer: Handshake Protocol: Encrypted Handshake Message
+        Content Type: Handshake (22)
+        Version: TLS 1.2 (0x0303)
+        Length: 40
+        Handshake Protocol: Encrypted Handshake Message
+
+No.     Time           Source                Destination           Protocol Length Info
+     55 9.300552       172.16.174.121        14.119.104.254        TCP      54     62628 → 443 [ACK] Seq=644 Ack=5279 Win=64128 Len=0
+
+Frame 55: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{EE8E3F8B-5495-46B4-9F95-E9AF344B12E7}, id 0
+Ethernet II, Src: IntelCor_99:34:96 (c4:d0:e3:99:34:96), Dst: WiWide_00:00:01 (00:1f:7a:00:00:01)
+Internet Protocol Version 4, Src: 172.16.174.121, Dst: 14.119.104.254
+Transmission Control Protocol, Src Port: 62628, Dst Port: 443, Seq: 644, Ack: 5279, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     56 9.301043       172.16.174.121        14.119.104.254        TLSv1.2  160    Application Data
+
+Frame 56: 160 bytes on wire (1280 bits), 160 bytes captured (1280 bits) on interface \Device\NPF_{EE8E3F8B-5495-46B4-9F95-E9AF344B12E7}, id 0
+Ethernet II, Src: IntelCor_99:34:96 (c4:d0:e3:99:34:96), Dst: WiWide_00:00:01 (00:1f:7a:00:00:01)
+Internet Protocol Version 4, Src: 172.16.174.121, Dst: 14.119.104.254
+Transmission Control Protocol, Src Port: 62628, Dst Port: 443, Seq: 644, Ack: 5279, Len: 106
+Transport Layer Security
+    TLSv1.2 Record Layer: Application Data Protocol: Hypertext Transfer Protocol
+        Content Type: Application Data (23)
+        Version: TLS 1.2 (0x0303)
+        Length: 101
+        Encrypted Application Data: 5ad362cdf4e5bae49d42b649c2956cbeca791e676863f5513909c08534af77916c821d2f…
+        [Application Data Protocol: Hypertext Transfer Protocol]
+
+No.     Time           Source                Destination           Protocol Length Info
+     57 9.310054       14.119.104.254        172.16.174.121        TCP      60     443 → 62628 [ACK] Seq=5279 Ack=750 Win=30208 Len=0
+
+Frame 57: 60 bytes on wire (480 bits), 60 bytes captured (480 bits) on interface \Device\NPF_{EE8E3F8B-5495-46B4-9F95-E9AF344B12E7}, id 0
+Ethernet II, Src: WiWide_00:00:01 (00:1f:7a:00:00:01), Dst: IntelCor_99:34:96 (c4:d0:e3:99:34:96)
+Internet Protocol Version 4, Src: 14.119.104.254, Dst: 172.16.174.121
+Transmission Control Protocol, Src Port: 443, Dst Port: 62628, Seq: 5279, Ack: 750, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     58 9.310897       14.119.104.254        172.16.174.121        TLSv1.2  1262   Application Data
+
+Frame 58: 1262 bytes on wire (10096 bits), 1262 bytes captured (10096 bits) on interface \Device\NPF_{EE8E3F8B-5495-46B4-9F95-E9AF344B12E7}, id 0
+Ethernet II, Src: WiWide_00:00:01 (00:1f:7a:00:00:01), Dst: IntelCor_99:34:96 (c4:d0:e3:99:34:96)
+Internet Protocol Version 4, Src: 14.119.104.254, Dst: 172.16.174.121
+Transmission Control Protocol, Src Port: 443, Dst Port: 62628, Seq: 5279, Ack: 750, Len: 1208
+Transport Layer Security
+    TLSv1.2 Record Layer: Application Data Protocol: Hypertext Transfer Protocol
+        Content Type: Application Data (23)
+        Version: TLS 1.2 (0x0303)
+        Length: 1203
+        Encrypted Application Data: 0000000000000001753093c935d1f2f1ba4bd1cfd4689de9bebcbbd12998ad0231a5833b…
+        [Application Data Protocol: Hypertext Transfer Protocol]
+
+No.     Time           Source                Destination           Protocol Length Info
+     59 9.311107       14.119.104.254        172.16.174.121        TCP      1334   443 → 62628 [ACK] Seq=6487 Ack=750 Win=30208 Len=1280 [TCP segment of a reassembled PDU]
+
+Frame 59: 1334 bytes on wire (10672 bits), 1334 bytes captured (10672 bits) on interface \Device\NPF_{EE8E3F8B-5495-46B4-9F95-E9AF344B12E7}, id 0
+Ethernet II, Src: WiWide_00:00:01 (00:1f:7a:00:00:01), Dst: IntelCor_99:34:96 (c4:d0:e3:99:34:96)
+Internet Protocol Version 4, Src: 14.119.104.254, Dst: 172.16.174.121
+Transmission Control Protocol, Src Port: 443, Dst Port: 62628, Seq: 6487, Ack: 750, Len: 1280
+
+No.     Time           Source                Destination           Protocol Length Info
+     60 9.311107       14.119.104.254        172.16.174.121        TLSv1.2  467    Application Data
+
+Frame 60: 467 bytes on wire (3736 bits), 467 bytes captured (3736 bits) on interface \Device\NPF_{EE8E3F8B-5495-46B4-9F95-E9AF344B12E7}, id 0
+Ethernet II, Src: WiWide_00:00:01 (00:1f:7a:00:00:01), Dst: IntelCor_99:34:96 (c4:d0:e3:99:34:96)
+Internet Protocol Version 4, Src: 14.119.104.254, Dst: 172.16.174.121
+Transmission Control Protocol, Src Port: 443, Dst Port: 62628, Seq: 7767, Ack: 750, Len: 413
+[2 Reassembled TCP Segments (1693 bytes): #59(1280), #60(413)]
+Transport Layer Security
+    TLSv1.2 Record Layer: Application Data Protocol: Hypertext Transfer Protocol
+        Content Type: Application Data (23)
+        Version: TLS 1.2 (0x0303)
+        Length: 1688
+        Encrypted Application Data: 0000000000000002080182d77a695b91ad8cb5463e13113d3647c8bb01ae8fe8e13ece89…
+        [Application Data Protocol: Hypertext Transfer Protocol]
+
+No.     Time           Source                Destination           Protocol Length Info
+     61 9.311149       172.16.174.121        14.119.104.254        TCP      54     62628 → 443 [ACK] Seq=750 Ack=6487 Win=64128 Len=0
+
+Frame 61: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{EE8E3F8B-5495-46B4-9F95-E9AF344B12E7}, id 0
+Ethernet II, Src: IntelCor_99:34:96 (c4:d0:e3:99:34:96), Dst: WiWide_00:00:01 (00:1f:7a:00:00:01)
+Internet Protocol Version 4, Src: 172.16.174.121, Dst: 14.119.104.254
+Transmission Control Protocol, Src Port: 62628, Dst Port: 443, Seq: 750, Ack: 6487, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     62 9.311175       172.16.174.121        14.119.104.254        TCP      54     62628 → 443 [ACK] Seq=750 Ack=8180 Win=64000 Len=0
+
+Frame 62: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{EE8E3F8B-5495-46B4-9F95-E9AF344B12E7}, id 0
+Ethernet II, Src: IntelCor_99:34:96 (c4:d0:e3:99:34:96), Dst: WiWide_00:00:01 (00:1f:7a:00:00:01)
+Internet Protocol Version 4, Src: 172.16.174.121, Dst: 14.119.104.254
+Transmission Control Protocol, Src Port: 62628, Dst Port: 443, Seq: 750, Ack: 8180, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     63 9.311408       172.16.174.121        14.119.104.254        TLSv1.2  85     Encrypted Alert
+
+Frame 63: 85 bytes on wire (680 bits), 85 bytes captured (680 bits) on interface \Device\NPF_{EE8E3F8B-5495-46B4-9F95-E9AF344B12E7}, id 0
+Ethernet II, Src: IntelCor_99:34:96 (c4:d0:e3:99:34:96), Dst: WiWide_00:00:01 (00:1f:7a:00:00:01)
+Internet Protocol Version 4, Src: 172.16.174.121, Dst: 14.119.104.254
+Transmission Control Protocol, Src Port: 62628, Dst Port: 443, Seq: 750, Ack: 8180, Len: 31
+Transport Layer Security
+    TLSv1.2 Record Layer: Encrypted Alert
+        Content Type: Alert (21)
+        Version: TLS 1.2 (0x0303)
+        Length: 26
+        Alert Message: Encrypted Alert
+
+No.     Time           Source                Destination           Protocol Length Info
+     64 9.311866       172.16.174.121        14.119.104.254        TCP      54     62628 → 443 [FIN, ACK] Seq=781 Ack=8180 Win=64128 Len=0
+
+Frame 64: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{EE8E3F8B-5495-46B4-9F95-E9AF344B12E7}, id 0
+Ethernet II, Src: IntelCor_99:34:96 (c4:d0:e3:99:34:96), Dst: WiWide_00:00:01 (00:1f:7a:00:00:01)
+Internet Protocol Version 4, Src: 172.16.174.121, Dst: 14.119.104.254
+Transmission Control Protocol, Src Port: 62628, Dst Port: 443, Seq: 781, Ack: 8180, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     65 9.318422       14.119.104.254        172.16.174.121        TCP      56     443 → 62628 [ACK] Seq=8180 Ack=781 Win=30208 Len=0
+
+Frame 65: 56 bytes on wire (448 bits), 56 bytes captured (448 bits) on interface \Device\NPF_{EE8E3F8B-5495-46B4-9F95-E9AF344B12E7}, id 0
+Ethernet II, Src: WiWide_00:00:01 (00:1f:7a:00:00:01), Dst: IntelCor_99:34:96 (c4:d0:e3:99:34:96)
+Internet Protocol Version 4, Src: 14.119.104.254, Dst: 172.16.174.121
+Transmission Control Protocol, Src Port: 443, Dst Port: 62628, Seq: 8180, Ack: 781, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     66 9.319025       14.119.104.254        172.16.174.121        TLSv1.2  85     Encrypted Alert
+
+Frame 66: 85 bytes on wire (680 bits), 85 bytes captured (680 bits) on interface \Device\NPF_{EE8E3F8B-5495-46B4-9F95-E9AF344B12E7}, id 0
+Ethernet II, Src: WiWide_00:00:01 (00:1f:7a:00:00:01), Dst: IntelCor_99:34:96 (c4:d0:e3:99:34:96)
+Internet Protocol Version 4, Src: 14.119.104.254, Dst: 172.16.174.121
+Transmission Control Protocol, Src Port: 443, Dst Port: 62628, Seq: 8180, Ack: 781, Len: 31
+Transport Layer Security
+    TLSv1.2 Record Layer: Encrypted Alert
+        Content Type: Alert (21)
+        Version: TLS 1.2 (0x0303)
+        Length: 26
+        Alert Message: Encrypted Alert
+
+No.     Time           Source                Destination           Protocol Length Info
+     67 9.319025       14.119.104.254        172.16.174.121        TCP      56     443 → 62628 [FIN, ACK] Seq=8211 Ack=781 Win=30208 Len=0
+
+Frame 67: 56 bytes on wire (448 bits), 56 bytes captured (448 bits) on interface \Device\NPF_{EE8E3F8B-5495-46B4-9F95-E9AF344B12E7}, id 0
+Ethernet II, Src: WiWide_00:00:01 (00:1f:7a:00:00:01), Dst: IntelCor_99:34:96 (c4:d0:e3:99:34:96)
+Internet Protocol Version 4, Src: 14.119.104.254, Dst: 172.16.174.121
+Transmission Control Protocol, Src Port: 443, Dst Port: 62628, Seq: 8211, Ack: 781, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     68 9.319236       172.16.174.121        14.119.104.254        TCP      54     62628 → 443 [RST] Seq=781 Win=0 Len=0
+
+Frame 68: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{EE8E3F8B-5495-46B4-9F95-E9AF344B12E7}, id 0
+Ethernet II, Src: IntelCor_99:34:96 (c4:d0:e3:99:34:96), Dst: WiWide_00:00:01 (00:1f:7a:00:00:01)
+Internet Protocol Version 4, Src: 172.16.174.121, Dst: 14.119.104.254
+Transmission Control Protocol, Src Port: 62628, Dst Port: 443, Seq: 781, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     69 9.319251       172.16.174.121        14.119.104.254        TCP      54     62628 → 443 [RST] Seq=781 Win=0 Len=0
+
+Frame 69: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{EE8E3F8B-5495-46B4-9F95-E9AF344B12E7}, id 0
+Ethernet II, Src: IntelCor_99:34:96 (c4:d0:e3:99:34:96), Dst: WiWide_00:00:01 (00:1f:7a:00:00:01)
+Internet Protocol Version 4, Src: 172.16.174.121, Dst: 14.119.104.254
+Transmission Control Protocol, Src Port: 62628, Dst Port: 443, Seq: 781, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     70 9.320341       14.119.104.254        172.16.174.121        TCP      56     443 → 62628 [ACK] Seq=8212 Ack=782 Win=30208 Len=0
+
+Frame 70: 56 bytes on wire (448 bits), 56 bytes captured (448 bits) on interface \Device\NPF_{EE8E3F8B-5495-46B4-9F95-E9AF344B12E7}, id 0
+Ethernet II, Src: WiWide_00:00:01 (00:1f:7a:00:00:01), Dst: IntelCor_99:34:96 (c4:d0:e3:99:34:96)
+Internet Protocol Version 4, Src: 14.119.104.254, Dst: 172.16.174.121
+Transmission Control Protocol, Src Port: 443, Dst Port: 62628, Seq: 8212, Ack: 782, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     71 9.320555       172.16.174.121        14.119.104.254        TCP      54     62628 → 443 [RST] Seq=782 Win=0 Len=0
+
+Frame 71: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{EE8E3F8B-5495-46B4-9F95-E9AF344B12E7}, id 0
+Ethernet II, Src: IntelCor_99:34:96 (c4:d0:e3:99:34:96), Dst: WiWide_00:00:01 (00:1f:7a:00:00:01)
+Internet Protocol Version 4, Src: 172.16.174.121, Dst: 14.119.104.254
+Transmission Control Protocol, Src Port: 62628, Dst Port: 443, Seq: 782, Len: 0
