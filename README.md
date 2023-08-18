@@ -44,3 +44,36 @@ a.exe!httplib::ClientImpl::Get(const std::string & path, const std::multimap<std
 a.exe!httplib::ClientImpl::Get(const std::string & path) 行 7376	C++
 a.exe!main() 行 20	C++
 ```
+
+# tls_version_table
+```
+/* Must be in order high to low */
+static const version_info tls_version_table[] = {
+#ifndef OPENSSL_NO_TLS1_3
+    {TLS1_3_VERSION, tlsv1_3_client_method, tlsv1_3_server_method},
+#else
+    {TLS1_3_VERSION, NULL, NULL},
+#endif
+#ifndef OPENSSL_NO_TLS1_2
+    {TLS1_2_VERSION, tlsv1_2_client_method, tlsv1_2_server_method},
+#else
+    {TLS1_2_VERSION, NULL, NULL},
+#endif
+#ifndef OPENSSL_NO_TLS1_1
+    {TLS1_1_VERSION, tlsv1_1_client_method, tlsv1_1_server_method},
+#else
+    {TLS1_1_VERSION, NULL, NULL},
+#endif
+#ifndef OPENSSL_NO_TLS1
+    {TLS1_VERSION, tlsv1_client_method, tlsv1_server_method},
+#else
+    {TLS1_VERSION, NULL, NULL},
+#endif
+#ifndef OPENSSL_NO_SSL3
+    {SSL3_VERSION, sslv3_client_method, sslv3_server_method},
+#else
+    {SSL3_VERSION, NULL, NULL},
+#endif
+    {0, NULL, NULL},
+};
+```
