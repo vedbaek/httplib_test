@@ -15,7 +15,7 @@ SET PRE_SSL=%BUILD_ROOT%\SSL
 
 @REM Directory given with --prefix MUST be absolute
 SET CONFIG=%ARCH% %REL% --prefix=%PRE_OpenSSL% --openssldir=%PRE_SSL%
-SET CONFIG=%CONFIG% --api=3.0 no-deprecated no-ssl no-err no-asm
+SET CONFIG=%CONFIG% --api=3.0 no-deprecated no-ssl no-err no-asm --release
 
 cd /d %SSL_ROOT%
 call vcvarsall.bat amd64
