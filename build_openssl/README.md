@@ -252,3 +252,4 @@ https://github.com/openssl/openssl/blob/master/INSTALL.md
 https://github.com/openssl/openssl/blob/master/README.md
 https://github.com/openssl/openssl
 https://wiki.swoole.com/wiki/page/437.html#entry_h2_8
+https://www.jinbuguo.com/linux/openssl_install.html
