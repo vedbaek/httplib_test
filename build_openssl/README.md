@@ -1,6 +1,6 @@
 
 
-# x64 Native Tools Command Prompt for VS 2022
+# Windows编译OpenSSL环境准备
 ```
 > where perl
 D:\app\strawberry-perl-5.32.1.1-64bit-portable\perl\bin\perl.exe
@@ -12,43 +12,22 @@ D:\app\nasm-2.16.01-win64\nasm-2.16.01\nasm.exe
 # build
 ```
 perl Configure VC-WIN64A --prefix=%CD%/out
+
+# nmake环境
+@SET PATH=%PATH%;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build
+call vcvarsall.bat amd64
+
+# 编译
 nmake
+
+# 测试
+nmake test
+
+# 安装
 nmake install
 
 # 清理
 nmake clean
-```
-
-
-# build
-```
-# /k 在执行完程序之后，cmd.exe 依然会继续运行
-set vcvar="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvarsall.bat"
-%comspec% /k %vcvar% amd64
-
-# --api=1.3.0 no-deprecated 指定编译版本，will remove support for all APIs that were deprecated in OpenSSL version 1.1.0 or below.  
-# --debug                   Build OpenSSL with debugging symbols and zero optimization level.
-# --release                 Build OpenSSL without debugging symbols.  This is the default.
-# --prefix                  安装路径，指定了之后还是会自动尝试往C:\Program Files\OpenSSL写
-
-# no-asm
-This should be viewed as debugging/troubleshooting option rather than for
-production use.  On some platforms a small amount of assembler code may still
-be used even with this option.
-
-set vcvar="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvarsall.bat"
-%comspec% /k %vcvar% amd64 && perl Configure VC-WIN64A --prefix=%CD%/out2 --api=1.3.0 no-deprecated && nmake && nmake install
-%comspec% /k %vcvar% amd64 && perl Configure VC-WIN64A --prefix=%CD%/out3 no-ssl && nmake && nmake install
-
-perl Configure VC-WIN64A --prefix=%CD%/out2 --api=3.0 no-deprecated --no-asm
-nmake
-nmake install
-
-perl Configure VC-WIN64A --prefix=%CD%/out3 no-ssl && nmake && nmake install
-
-nmake clean
-perl Configure VC-WIN64A --prefix=%CD%/out3 no-ssl && nmake && nmake install
-
 ```
 
 
