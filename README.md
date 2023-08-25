@@ -1,4 +1,21 @@
 
+# submodule
+```
+# push
+git submodule add git@github.com:yhirose/cpp-httplib.git third/cpp-httplib
+cd cpp-httplib
+git checkout v0.14.0
+
+git submodule add git@github.com:openssl/openssl.git third/openssl
+cd openssl
+git checkout 
+
+# pull
+git pull
+git submodule update --init
+```
+
+
 # httplib::Client with https
 ```
 httplib::Client cli("https://www.baidu.com");

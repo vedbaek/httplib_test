@@ -1,3 +1,6 @@
 [submodule "third/cpp-httplib"]
 	path = third/cpp-httplib
 	url = git@github.com:yhirose/cpp-httplib.git
+[submodule "third/openssl"]
+	path = third/openssl
+	url = git@github.com:openssl/openssl.git
