@@ -3,7 +3,9 @@
 using namespace std;
 
 int main() {
-  httplib::SSLClient cli("www.baidu.com");
+  // 这里只能用host初始化，不带https前缀或者path后缀
+  // httplib::SSLClient cli("www.baidu.com");
+  httplib::SSLClient cli("jsonplaceholder.typicode.com");
   // ok
   cli.enable_server_certificate_verification(true);
 
@@ -17,7 +19,9 @@ int main() {
   // // unknown certificate verification error
   // cli.enable_server_certificate_verification(true);
 
-  auto res = cli.Get("/");
+  // 这里可以只写path，也可以写完整请求url
+  // auto res = cli.Get("/posts?_limit=5");
+  auto res = cli.Get("https://jsonplaceholder.typicode.com/posts?_limit=1");
   auto result = cli.get_openssl_verify_result();
   cout << X509_verify_cert_error_string(result) << endl;
 
