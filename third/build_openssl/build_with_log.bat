@@ -16,8 +16,7 @@ if "%TARGET%" == "" (
 
 set LOG_FILE="%TARGET%_%YY%-%MM%-%DD% %h%'%m%'%s%.log"
 
-@REM call %TARGET% | tee %LOG_FILE%
-timeout /t 3
+call %TARGET% | tee %LOG_FILE%
 set end_time=%time%
 
 REM =========================== delta time
