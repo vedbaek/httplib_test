@@ -8,7 +8,7 @@ git checkout v0.14.0
 
 git submodule add git@github.com:openssl/openssl.git third/openssl
 cd openssl
-git checkout 
+git checkout openssl-3.1.2
 
 # pull
 git pull
